@@ -1,0 +1,24 @@
+{
+  "name": "csis3126_lopez",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "devStart":"nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marialopez456/CSIS3126_Lopez.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marialopez456/CSIS3126_Lopez/issues"
+  },
+  "homepage": "https://github.com/marialopez456/CSIS3126_Lopez#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.20"
+  }
+}
