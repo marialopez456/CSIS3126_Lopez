@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Gemunu Libre', sans-serif;
+}
+.loginbox{
+    width: 320px;
+    height: 420px;
+    background: rgb(4, 4, 87);
+    color: rgb(255, 255, 255);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+
+}
+.logo{
+    width: 150px;
+    height: 100px;
+    
+    position: absolute;
+    top: -10px;
+    left: calc(50%-50px);
+}

@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gemunu Libre', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/rename.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    background-color: rgba(226, 224, 224, 0.5);
+    height: 50px;
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.login-links{
+    flex:1;
+    text-align: right;
+}
+.login-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.login-links ul li a{
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    font: size 13px;
+}
+
+.nav-links{
+    flex:1;
+    text-align: left;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    font: size 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #000000;
+    display: block;
+    margin: auto;
+
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
