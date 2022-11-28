@@ -4,23 +4,30 @@
         <title>TikcoTech Login</title>
         <meta charset="utf-8">
 
-            <div class = "loginbox">
-                <a href="/index.ejs"><img src="public/css/images/logo.png"></a>
+            <div class = "registerbox">
+                <a href="/index"><img src="/public/css/images/logo.png"></a>
+                <link rel="stylesheet" type="text/css" href="/public/css/loginstyle.css">
                 <h1>Login</h1>
-                <form>
-               <p>Username</p>
-               <input type = "text" name="username" id="username" placeholder="Enter Username" required>
-                <p>Password</p>
-                <input type = "text" name="password" id="password" placeholder="Enter Password" required>
+                <form action="/login" method="POST"> 
+                    <div class="row">
+                  
+                        <% if (messages.error) { %>
+                          <div class="alert alert-danger">
+                            <strong><%= messages.error %> </strong>
+                          </div>
+                        <% } %> 
+                    <p>Email</p>
+                    <input type = "email" name="email" id="email" placeholder="Enter Email" required>
+                   <p>Password</p>
+                   <input type = "password" name="password" id="password" placeholder="Enter Password" required>
+                    
                 <br></br>
-                <input type =  "submit" name="" value="Login"  >     
-                
-                <a href = "/register">Create An Account</a>
+                <button type = "submit" >Login</button>    
+                <a href = "/register">Register</a>
             </div>
-              
+    
                 </form>
-                
-           
+          
             
         </body>
 
