@@ -3,33 +3,44 @@
     <head>
         <title>TikcoTech Login</title>
         <meta charset="utf-8">
-
-            <div class = "registerbox">
-                <a href="/index"><img src="/public/css/images/logo.png"></a>
+                
                 <link rel="stylesheet" type="text/css" href="/public/css/loginstyle.css">
-                <h1>Login</h1>
-                <form action="/login" method="POST"> 
-                    <div class="row">
-                  
-                        <% if (messages.error) { %>
-                          <div class="alert alert-danger">
-                            <strong><%= messages.error %> </strong>
-                          </div>
-                        <% } %> 
-                    <p>Email</p>
-                    <input type = "email" name="email" id="email" placeholder="Enter Email" required>
-                   <p>Password</p>
-                   <input type = "password" name="password" id="password" placeholder="Enter Password" required>
-                    
-                <br></br>
-                <button type = "submit" >Login</button>    
-                <a href = "/register">Register</a>
+            </head>
+            <div class = "logo">
+                <a href="/"><img src="/public/css/images/logo.png"></a>
             </div>
-    
-                </form>
-          
-            
+            <div class = "future">
+                <p>El Futuro de Technologia</p>
+            </div>
+                 <div class="center">
+                          <h1>Login</h1>
+                          <form action="/login" method="POST"> 
+                            <div class="row">
+                  
+                                <% if (messages.error) { %>
+                                  <div class="alert alert-danger">
+                                    <strong><%= messages.error %> </strong>
+                                  </div>
+                                <% } %> 
+                            </div>
+                            <div class="txt_field">
+                                <input type = "email" name="email" id="email"  required>
+                              <span></span>
+                              <label>Email</label>
+                            </div>
+                            <div class="txt_field">
+                                <input type = "password" name="password" id="password" required>
+                              <span></span>
+                              <label>Password</label>
+                            </div>
+                            <input type="submit" value="Login">
+                            <div class="signup_link">
+                              Not a member? <a href="/register">Signup</a>
+                            </div>
+                          </form>
+                        </div>
+                    
         </body>
 
-    </head>
+ 
 </html>
