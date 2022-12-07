@@ -1,4 +1,4 @@
-
+<!--Design Project TikcoTech by Maria Lopez -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,14 +7,20 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="with=device-width,initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="public/css/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="public/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="public/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="public/css/font.css">
+<link rel="stylesheet" type="text/css" href="public/css/jquery.fancybox.css">
+<link rel="stylesheet" type="text/css" href="public/css/li-scroller.css">
+<link rel="stylesheet" type="text/css" href="public/css/slick.css">
+<link rel="stylesheet" type="text/css" href="public/css/theme.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<div id="preloader">
-  <div id="status">&nbsp;</div>
-</div>
+
 <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
 <div class="container">
   <header id="header">
@@ -23,13 +29,13 @@
         <div class="header_top">
           <div class="header_top_left">
             <ul class="top_nav">
-                <li><a href="">INICIO</a></li>
-                <li><a href="">INFORMATION</a></li>
-                <li><a href="">CONTACT0</a></li>
+                <li><a href="/">INICIO</a></li>
+                <li><a href="/information">INFORMATION</a></li>
+                <li><a href="/information">CONTACTO</a></li>
               </ul>
             </div>
             <div class="header_top_right">
-              <h1 class="text-dark">Hello <%= name %>  </h1>
+              <h1 class="text-light">Hello <%= name %>  </h1>
           </div>
         </div>
       </div>
@@ -40,7 +46,7 @@
            </div>
            <div class = "logout">
           <form action = "/logout?_method=DELETE" method="POST">
-            <li><a href = "logout"><button>Logout</button></a></li>
+            <button class="nav-link fw-bold py-1 px-0 btn p=3 btn-dark text-blue" type="submit"  >Logout</button>
           </form>
         </div>
       </div>
@@ -48,37 +54,306 @@
   </header>
   <section id="navArea">
     <nav class="navbar navbar-inverse" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      </div>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav main_nav">
-          <li class="active"><a href="/"><span class="fa fa-home desktop-home"></span><span class="mobile-show">INICIO</span></a></li>
-          <li><a href="#">WHATSAPP</a></li>
-          <li><a href="#">MOVIL</a></li>
-          <li><a href="#">PC</a></li>
-          <li><a href="contact.html">INFORMACION</a></li>
-          <li><a href="404.html">CONTACTO</a></li>
+          <li><a href="/articles">TikcoTech</a></li>
+          <li><a href="/">Technologia</a></li>
+          <li><a href="/articles">WHATSAPP</a></li>
+          <li><a href="/articles">HACKS</a></li>
+          <li><a href="/information">Social Media</a></li>
+          
         </ul>
       </div>
     </nav>
-  </section>
-  <section id="newsSection">
+  </section> 
+
+  
+
+          
+  <section id="contentSection">
     <div class="row">
-      <div class="col-lg-12 col-md-12">
-        <div class="latest_newsarea"> <span>Latest News</span>
-          <ul id="ticker01" class="news_sticker">
-            <li><a href="#"><img src="../images/news_thumbnail3.jpg" alt="">My First News Item</a></li>
-            <li><a href="#"><img src="../images/news_thumbnail3.jpg" alt="">My Second News Item</a></li>
-            <li><a href="#"><img src="../images/news_thumbnail3.jpg" alt="">My Third News Item</a></li>
-            <li><a href="#"><img src="../images/news_thumbnail3.jpg" alt="">My Four News Item</a></li>
-            <li><a href="#"><img src="../images/news_thumbnail3.jpg" alt="">My Five News Item</a></li>
-            <li><a href="#"><img src="../images/news_thumbnail3.jpg" alt="">My Six News Item</a></li>
-            <li><a href="#"><img src="../images/news_thumbnail3.jpg" alt="">My Seven News Item</a></li>
-            <li><a href="#"><img src="../images/news_thumbnail3.jpg" alt="">My Eight News Item</a></li>
-            <li><a href="#"><img src="../images/news_thumbnail2.jpg" alt="">My Nine News Item</a></li>
-          </ul>
-  
+      <div class="col-lg-8 col-md-8 col-sm-8">
+        <div class="left_content">
+          <div class="single_post_content">
+            <h2><span>Technologia</span></h2>
+            <div class="single_post_content_left">
+              <ul class="business_catgnav  wow fadeInDown">
+                <li>
+                  <figure class="bsbig_fig"> <a href="/articles" class="featured_img"> <img alt="" src="/public/css/images/newtech.jpg"> <span class="overlay"></span> </a>
+                    <figcaption> <a href="/articles"> 10 PROGRAMAS INDISPENSABLES PARA TU WINDOWS</a> </figcaption>
+                    <p>10 Programas fundamentales para tu windows 1 Visores de Documentos Adobe Reader es uno...</p>
+                  </figure>
+                </li>
+              </ul>
+            </div>
+            <div class="single_post_content_right">
+              <ul class="spost_nav">
+                <li>
+                  <div class="media wow fadeInDown"> <a href="/articles" class="media-left"> <img alt="" src="/public/css/images/background.jpg"> </a>
+                    <div class="media-body"> <a href="/articles" class="catg_title"> COMO GRABAR LA PANTALLA DE TU PC</a> </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="media wow fadeInDown"> <a href="/articles" class="media-left"> <img alt="" src="/public/css/images/smile.jpg"> </a>
+                    <div class="media-body"> <a href="/articles" class="catg_title"> COMUNICACIÓN LA APLICACION PARA ANDROID</a> </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="media wow fadeInDown"> <a href="/articles" class="media-left"> <img alt="" src="/public/css/images/windows.jpg"> </a>
+                    <div class="media-body"> <a href="/articles" class="catg_title">COMO ACTUALIZAR DE WINDOWS 11</a> </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="media wow fadeInDown"> <a href="/articles" class="media-left"> <img alt="" src="/public/css/images/newtech.jpg"> </a>
+                    <div class="media-body"> <a href="/articles" class="catg_title">¿COMO ENCONTRAR TU TELÉFONO APLAUDIENDO?</a> </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="fashion_technology_area">
+            <div class="fashion">
+              <div class="single_post_content">
+                <h2><span>APPLE</span></h2>
+                <ul class="business_catgnav wow fadeInDown">
+                  <li>
+                    <figure class="bsbig_fig"> <a href="/articles" class="featured_img"> <img alt="" src="/public/css/images/apple.jpg"> <span class="overlay"></span> </a>
+                      <figcaption> <a href="/articles">Cambie su navegador web predeterminado y su aplicación de correo electrónico</a> </figcaption>
+                      <p>Si su teléfono ejecuta la última versión de iOS, puede hacer que Google Chrome, Firefox...</p>
+                    </figure>
+                  </li>
+                </ul>
+                <ul class="spost_nav">
+                  <li>
+                    <div class="media wow fadeInDown"> <a href="/articles" class="media-left"> <img alt="" src="/public/css/images/applewatch.jpg"> </a>
+                      <div class="media-body"> <a href="/articles" class="catg_title">Agregar subtítulos a fotos y videos</a> </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media wow fadeInDown"> <a href="/articles" class="media-left"> <img alt="" src="/public/css/images/rename.jpg"> </a>
+                      <div class="media-body"> <a href="/articles" class="catg_title">Responder a mensajes individuales</a> </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media wow fadeInDown"> <a href="/articles" class="media-left"> <img alt="" src="/public/css/images/iphone.jpg"> </a>
+                      <div class="media-body"> <a href="/articles" class="catg_title">Agrega widgets a tu pantalla de inicio</a> </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="technology">
+              <div class="single_post_content">
+                <h2><span>SAMSUNG</span></h2>
+                <ul class="business_catgnav">
+                  <li>
+                    <figure class="bsbig_fig wow fadeInDown"> <a href="/articles" class="featured_img"> <img alt="" src="/public/css/images/samsung.jpg"> <span class="overlay"></span> </a>
+                      <figcaption> <a href="/articles">Crear GIF a partir de videos de YouTube</a> </figcaption>
+                      <p>Primero, abra un video en la aplicación de YouTube y luego acceda a Smart Select. En un teléfono Galaxy, luego deslizará el dedo desde la derecha</p>
+                    </figure>
+                  </li>
+                </ul>
+                <ul class="spost_nav">
+                  <li>
+                    <div class="media wow fadeInDown"> <a href="/articles" class="media-left"> <img alt="" src="/public/css/images/zflip.jpg"> </a>
+                      <div class="media-body"> <a href="/articles" class="catg_title"> Convierte sitios web y mensajes en recordatorios</a> </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media wow fadeInDown"> <a href="/articles" class="media-left"> <img alt="" src="/public/css/images/zfold.jpg"> </a>
+                      <div class="media-body"> <a href="/articles" class="catg_title">Modificar la vista de pantalla dividida</a> </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media wow fadeInDown"> <a href="/articles" class="media-left"> <img alt="" src="/public/css/images/samsung.jpg"> </a>
+                      <div class="media-body"> <a href="/articles" class="catg_title">Personaliza tu experiencia de audio</a> </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="single_post_content">
+            <h2><span>HACKS</span></h2>
+            <ul class="photograph_nav  wow fadeInDown">
+              <li>
+                <div class="photo_grid">
+                  <figure class="effect-layla"> <a class="fancybox-buttons" data-fancybox-group="button" href="#" title="Photography Ttile 1"> <img src="/public/css/images/what.jpg" alt=""/></a> </figure>
+                </div>
+              </li>
+              <li>
+                <div class="photo_grid">
+                  <figure class="effect-layla"> <a class="fancybox-buttons" data-fancybox-group="button" href="#" title="Photography Ttile 2"> <img src="/public/css/images/iphone.jpg" alt=""/> </a> </figure>
+                </div>
+              </li>
+              <li>
+                <div class="photo_grid">
+                  <figure class="effect-layla"> <a class="fancybox-buttons" data-fancybox-group="button" href="images/photograph_img4.jpg" title="Photography Ttile 3"> <img src="/public/css/images/zfold.jpg" alt=""/> </a> </figure>
+                </div>
+              </li>
+              <li>
+                <div class="photo_grid">
+                  <figure class="effect-layla"> <a class="fancybox-buttons" data-fancybox-group="button" href="images/photograph_img4.jpg" title="Photography Ttile 4"> <img src="/public/css/images/smile.jpg" alt=""/> </a> </figure>
+                </div>
+              </li>
+              <li>
+                <div class="photo_grid">
+                  <figure class="effect-layla"> <a class="fancybox-buttons" data-fancybox-group="button" href="images/photograph_img2.jpg" title="Photography Ttile 5"> <img src="/public/css/images/samsung.jpg" alt=""/> </a> </figure>
+                </div>
+              </li>
+              <li>
+                <div class="photo_grid">
+                  <figure class="effect-layla"> <a class="fancybox-buttons" data-fancybox-group="button" href="images/photograph_img2.jpg" title="Photography Ttile 6"> <img src="/public/css/images/newtech.jpg" alt=""/> </a> </figure>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="single_post_content">
+            <h2><span>WHATSAPP</span></h2>
+            <div class="single_post_content_left">
+              <ul class="business_catgnav">
+                <li>
+                  <figure class="bsbig_fig  wow fadeInDown"> <a class="featured_img" href="/articles"> <img src="/public/css/images/whatsapp.jpg" alt=""> <span class="overlay"></span> </a>
+                    <figcaption> <a href="/articles">DESCARGA WHATSAPP PLUS LA ULTIMA VERSIÓN 2022</a> </figcaption>
+                    <p>WHATSAPP PLUS 2020 GRATIS Hoy hablaremos de la nueva versión de WhatsApp Plus</p>
+                  </figure>
+                </li>
+              </ul>
+            </div>
+            <div class="single_post_content_right">
+              <ul class="spost_nav">
+                <li>
+                  <div class="media wow fadeInDown"> <a href="/articles" class="media-left"> <img alt="" src="/public/css/images/whatsappphoe.jpg"> </a>
+                    <div class="media-body"> <a href="/articles" class="catg_title"> MIRA ESTE HACK PARA TU WHATSAPP</a> </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="media wow fadeInDown"> <a href="/articles" class="media-left"> <img alt="" src="/public/css/images/whatsapplogo.jpg"> </a>
+                    <div class="media-body"> <a href="/articles" class="catg_title"> COMO LIBERAR ESPACIO DE TU WHATSAPP SIN PROGRAMAS</a> </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="media wow fadeInDown"> <a href="/articles" class="media-left"> <img alt="" src="/public/css/images/what.jpg"> </a>
+                    <div class="media-body"> <a href="/articles" class="catg_title"> COMO BLOQUEAR TU WHATSAPP CON HUELLA</a> </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="media wow fadeInDown"> <a href="/articles" class="media-left"> <img alt="" src="/public/css/images/app.jpg"> </a>
+                    <div class="media-body"> <a href="/articles" class="catg_title"> QUÉ ESTA PASANDO CON WHATSAPP</a> </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <aside class="right_content">
+          <div class="single_sidebar">
+            <h2><span>Popular Post</span></h2>
+            <ul class="spost_nav">
+              <li>
+                <div class="media wow fadeInDown"> <a href="/articles" class="media-left"> <img alt="" src="/public/css/images/smile.jpg"> </a>
+                  <div class="media-body"> <a href="/articles" class="catg_title">COMUNICACIÓN LA APLICACION PARA ANDROID</a> </div>
+                </div>
+              </li>
+              <li>
+                <div class="media wow fadeInDown"> <a href="/articles" class="media-left"> <img alt="" src="/public/css/images/apple.jpg"> </a>
+                  <div class="media-body"> <a href="/articles" class="catg_title">Cambie su navegador web predeterminado y su aplicación de correo electrónico</a> </div>
+                </div>
+              </li>
+              <li>
+                <div class="media wow fadeInDown"> <a href="/articles" class="media-left"> <img alt="" src="/public/css/images/whatsapp.jpg"> </a>
+                  <div class="media-body"> <a href="/articles" class="catg_title">Agrega widgets a tu pantalla de inicio</a> </div>
+                </div>
+              </li>
+              <li>
+                <div class="media wow fadeInDown"> <a href="/articles" class="media-left"> <img alt="" src="/public/css/images/samsung.jpg"> </a>
+                  <div class="media-body"> <a href="/articles" class="catg_title">DESCARGA WHATSAPP PLUS LA ULTIMA VERSIÓN 2022</a> </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="single_sidebar">
+            <h2><span>More Hacks</span></h2>
+            <ul class="spost_nav">
+              <li>
+                <div class="media wow fadeInDown"> <a href="/articles" class="media-left"> <img alt="" src="/public/css/images/whatsapp.jpg"> </a>
+                  <div class="media-body"> <a href="/articles" class="catg_title">	Agrega widgets a tu pantalla de inicio</a> </div>
+                </div>
+              </li>
+              <li>
+                <div class="media wow fadeInDown"> <a href="/articles" class="media-left"> <img alt="" src="/public/css/images/iphone.jpg"> </a>
+                  <div class="media-body"> <a href="/articles" class="catg_title">Cambie su navegador web predeterminado y su aplicación de correo electrónico</a> </div>
+                </div>
+              </li>
+              <li>
+                <div class="media wow fadeInDown"> <a href="/articles" class="media-left"> <img alt="" src="/public/css/images/zflip.jpg"> </a>
+                  <div class="media-body"> <a href="/articles" class="catg_title">	Convierte sitios web y mensajes en recordatorios</a> </div>
+                </div>
+
+            </ul>
+          </div>
 
 
+          <div class="single_sidebar wow fadeInDown">
+            <h2><span>Sponsor</span></h2>
+            <a class="sideAdd" href="/articles"><img src="/public/css/images/whatsapplogo.jpg" alt=""></a> </div>
+          <div class="single_sidebar wow fadeInDown">
+            
+          </div>
+          <div class="single_sidebar wow fadeInDown">
+            <h2><span>Links</span></h2>
+            <ul>
+              <li><a href="/information">Contacto</a></li>
+              <li><a href="/information">Information</a></li>
+              <li><a href="/information">Social Media</a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+  <footer id="footer">
+    <div class="footer_top">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <div class="footer_widget wow fadeInLeftBig">
+            <h2>TikcoTech</h2>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <div class="footer_widget wow fadeInDown">
+            <h2>Tag</h2>
+            <ul class="tag_nav">
+              <li><a href="/articles">Technologia</a></li>
+              <li><a href="/articles">WHATSAPP</a></li>
+              <li><a href="/articles">Samsung</a></li>
+              <li><a href="/articles">Apple</a></li>
+              <li><a href="/articles">Information</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <div class="footer_widget wow fadeInRightBig">
+            <h2>Contacto</h2>
+            <p>Para contactarme por favor envíeme un correo electrónico a umalopez123@gmail.com</p>
+            <address>
+              100 Harborside Blvd, Providence RI, 02905, United States Phone: 123-326-789 Fax: 123-546-567
+            </address>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer_bottom">
+      <p class="copyright">Copyright &copy; 2022 <a href="/">TikcoTech</a></p>
+      <p class="developer">Developed By Maria Lopez</p>
+    </div>
+  </footer>
+</div>
 
-  
 </body>
 </html>

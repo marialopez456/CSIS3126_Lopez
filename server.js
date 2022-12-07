@@ -48,6 +48,12 @@ app.use('/public',express.static(__dirname + '/public'));
 app.get('/', checkAuthenicated,(req,res) => {
     res.render("index.ejs", {name: req.user.name})
 })
+app.get('/articles',(req,res) => {
+    res.render('articles.ejs')
+})
+app.get('/information',(req,res) => {
+    res.render('information.ejs')
+})
 app.get('/login',checkNotAuthenicated,(req,res) => {
     res.render('login.ejs')
 })
