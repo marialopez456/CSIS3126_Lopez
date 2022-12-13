@@ -17,9 +17,11 @@
   },
   "homepage": "https://github.com/marialopez456/CSIS3126_Lopez#readme",
   "dependencies": {
+    "body-parser": "^1.20.1",
     "dotenv": "^16.0.3",
     "express": "^4.18.1",
     "method-override": "^3.0.0",
+    "mongoose": "^6.8.0",
     "nodemon": "^2.0.20"
   }
 }
