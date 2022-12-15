@@ -1,0 +1,36 @@
+Test plan:
+User is able to  logout : pass
+User is able to create an account: pass
+User is able to login : pass
+Node.js is running in the broswer : pass
+User is able to create an article: pass
+user is able to view article: pass
+user is able to edit article: pass
+User is able to delete article: pass / comment: remember to retrieve id from article 
+mongodb is running and storage articles to database: pass
+Css and bootstrap is working fine: somewhat pass when you when you minimize the screen the second nav doesn't show
+ejs files working propertly: pass
+
+
+
+
+
+Few errors and bugs I encountered
+One main bug if that if the server gets disconnected or updated. I sometimes lose the account I've created and I have to make a new one 
+if I want to log back in. I wasn't able to figure why this happened because the code seems to work.It still works because when the server is connected and running fine you can login and log out with zero issues or bugs.
+Bug two: CANNOT GET / 
+I got this bug when I tried to go from one file to another using href.When at a glance it should have worked because it was connected to the server. To fix I doubled checked my code and saw I forgot to include res.render in the app.get function.
+Most of my errors and bugs were because I am not defining objects. Most of my errors says object is undefined.
+Main errors I frequently get but now solved:
+ReferenceError: C:\Users\umalo\OneDrive\Documents\CSIS3126_Lopez\CSIS3126_Lopez\views\edit_article.ejs:103
+    101|               </form>
+    102|               <ul>
+ >> 103|                 <p><%=articles.title%></p>
+    104|              </ul>
+    105|
+    106|             </div>
+
+articles is not defined
+The reason I got this error because in server.js I entered the wrong directory caused mongodb to not be able to grab the id of the article and post the title of the article in html.
+
+
